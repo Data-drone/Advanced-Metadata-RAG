@@ -7,7 +7,6 @@ from langchain.callbacks.manager import (
     AsyncCallbackManagerForChainRun,
     CallbackManagerForChainRun,
     CallbackManagerForRetrieverRun,
-    Callbacks,
     AsyncCallbackManagerForRetrieverRun,
 )
 
@@ -15,8 +14,6 @@ from langchain.chains import RetrievalQA
 from langchain.docstore.document import Document
 from langchain.schema import Document
 from langchain.vectorstores.base import VectorStoreRetriever
-from langchain_community.vectorstores import DatabricksVectorSearch
-from langchain_community.vectorstores.utils import maximal_marginal_relevance
 
 
 class RetrievalQAFilter(RetrievalQA):
