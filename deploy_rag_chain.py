@@ -34,7 +34,7 @@ with mlflow.start_run(run_name='brian_test') as run:
         ),  # Chain code file e.g., /path/to/the/chain.py
         artifact_path="chain",
         input_example=input_test,
-        code_paths=['create_custom_retriver_filter_passthrough.py']
+        code_paths=['create_custom_retriver_filter_passthrough.py'],
         signature=signature)    
 
 
